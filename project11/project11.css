@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script&family=Montserrat:wght@100&family=Pathway+Gothic+One&family=Poppins:wght@200&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);
+}
+.navbar{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+}
+.logo{
+    width: 40%;
+    color: white;
+    background-image: linear-gradient(to top, rgb(126, 28, 255) 50%, rgb(123, 88, 248) 50%);
+    padding-left: 155px;
+}
+.logo h1{
+    
+    font-weight: bold;
+    font-size: 1.6rem;
+    animation: aagepeeche 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes aagepeeche {
+    from{
+        padding-left: 40px;
+    }
+    to{
+        padding-right: 40px;
+    }
+    
+}
+.menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    position: relative;
+}
+.menu a:first-child{
+    color: blue;
+}
+.menu a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    top: 100%;
+    border-bottom: 3px solid rgb(99, 35, 248);
+    transition: 0.5s;
+}
+.menu a:hover::before{
+    width: 100%;
+}
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightside{
+    border-radius: 46% 54% 36% 64% / 62% 28% 72% 38%  ;
+    background-color: #d2f8f8;
+    width: 470px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightside img{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 160px;
+}
+.leftside h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+.leftside h2::after{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 3px;
+    top: 50%;
+    left: 30.5%;
+    background-color: black;
+}
+
+.leftside h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+}
+.leftside h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.btn-one {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to right, rgb(63, 23, 206), rgb(153, 47, 214));
+    margin-right: 50px;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px; 
+    cursor: pointer; 
+    text-align: center;
+    display: inline-block;
+    border: 2px solid  rgb(55, 0, 128);
+
+}
+.btn-one:hover{
+    background-color: white;
+    color: rgb(87, 0, 128);
+    background-image: none;
+    border: 2px solid rgb(71, 0, 165);
+    transition: 0.5s;
+    font-weight: bold;
+}
+.btn-two{
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid rgb(55, 0, 128);
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btn-two:hover{
+    background: linear-gradient(to right, rgb(63, 23, 206), rgb(153, 47, 214));
+    color: white;
+    transition: 0.3s;
+}
+
